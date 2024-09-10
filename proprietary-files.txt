@@ -438,8 +438,8 @@ vendor/lib/libcpion.so
 vendor/lib/libhdcpsrm.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libtrustedapploader.so
-vendor/lib/libwvhidl.so
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libwvhidl.so|55d9f33a55a8d52c596a961a49bf6b7fbbe16d8f
+vendor/lib/mediadrm/libwvdrmengine.so|f3bf43a207271fe6fdac80ee7f55dc9c1af88dbf
 
 # DSP
 vendor/bin/cdsprpcd
