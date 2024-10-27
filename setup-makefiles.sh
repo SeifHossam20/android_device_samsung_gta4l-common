@@ -40,8 +40,7 @@ function lib_to_package_fixup_vendor_variants() {
             echo "$1_vendor"
             ;;
         libwpa_client | \
-	    libutils-v30 | \
-	    libui-v30) ;;
+	    libutils-v30);;
         *)
             return 1
             ;;
