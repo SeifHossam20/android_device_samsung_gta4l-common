@@ -69,10 +69,6 @@ function blob_fixup() {
 	    [ "$2" = "" ] && return 0
             grep -q "libcrypto_shim.so" "${2}" || "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
             ;;
-        vendor/lib64/libgui_vendor.so)
-	    [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libui.so" "libui-v30.so" "${2}"
-            ;;
         vendor/lib64/hw/gatekeeper.mdfpp.so|vendor/lib64/libkeymaster_helper.so|vendor/lib64/libskeymaster4device.so)
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
